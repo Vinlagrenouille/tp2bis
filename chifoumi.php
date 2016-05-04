@@ -44,6 +44,23 @@
     if ($ordi == 2){
       echo "<img src=\"./images/ciseaux.png\">";
     }
+    
+    if ($ordi == $coup){
+      echo "<legend>Egalite !</legend>";
+    }
+    else if ($ordi == 1 and $coup == 2){
+      echo "<legend>Victoire !</legend>";
+    }
+    else if ($ordi == 0 and $coup ==1){
+      echo "<legend>Victoire !</legend>";
+    }
+    else if ($ordi == 2 and $coup == 0){
+      echo "<legend>Victoire !</legend>";
+    }
+    else {
+      echo "<legend>Defaite !</legend>";
+    }
+      
   }
   ?>
 </body>
